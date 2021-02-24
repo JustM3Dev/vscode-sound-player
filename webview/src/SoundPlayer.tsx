@@ -50,9 +50,9 @@ export default class SoundPlayer extends PureComponent<Props, State>{
             isPlaying
         } = this.state
         if (isPlaying) {
-            return <button onClick={this.onClickStop}>停止</button>
+            return <button onClick={this.onClickStop}>Stop</button>
         } else {
-            return <button onClick={this.onClickStart}>播放</button>
+            return <button onClick={this.onClickStart}>Play</button>
         }
     }
 
