@@ -1,5 +1,25 @@
 # vscode-sound-player
 
+## Description
+This plugin is used to play the corresponding file audio in the vscode environment
+Features
+
+## Technical point
+This plugin uses react on the backend.
+The extension side uses web-audio-api to decode
+
+## Problem
+Because it is found that web-audio-api will decode the audio (it seems to be long audio at present), it will fail to decode, so the plug-in is also useful, and it is not considered as continuing development for the time being.
+additional
+
+If you know of any other nodejs-side audio decoding libraries, please send me an issue to continue development. The requirement for the library is to be able to obtain the audio sampling rate, the number of sampling frames, the number of channels and the audio data in each channel.
+prompt
+
+If you are also developing a vscode plug-in and find that its webview cannot play sound, then there is a way that is feasible (that is, the plug-in is using). The extension side decodes the audio and sends it to the webview side, and the webview side uses audio contextapi for sound playback.
+
+
+# Chinese
+
 ## 描述
 本插件用于在vscode环境中播放对应文件音频
 
